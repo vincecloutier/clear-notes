@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {    
+struct ContentView: View {
     @AppStorage("tapCount") private var text = ""
     var body: some View {
             TextEditor(text: $text)
