@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var fullText: String = "This is some editable text..."
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TextEditor(text: $fullText)
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+
+// need to add user defaults
+// need to make background transparent
