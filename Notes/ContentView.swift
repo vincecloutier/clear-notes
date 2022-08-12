@@ -15,10 +15,9 @@ struct ContentView: View {
             CustomizableTextEditor(text: $text)
                 .background(ClearEffect())
         }
-        .frame(width: 400, height: 400)
+        .frame(minWidth: 250, minHeight: 250)
     }
 }
 
-// disallow fullscreen
 // need to add user defaults
 // hide fucking scroll bar
