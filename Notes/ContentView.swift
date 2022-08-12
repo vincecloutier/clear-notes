@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             CustomizableTextEditor(text: $text)
-                .background(VisualEffect())
+                .background(ClearEffect())
         }
         .frame(width: 400, height: 400)
     }
@@ -21,5 +21,4 @@ struct ContentView: View {
 
 // disallow fullscreen
 // need to add user defaults
-// need to make background transparent
 // hide fucking scroll bar

@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct VisualEffect: NSViewRepresentable {
+struct ClearEffect: NSViewRepresentable {
   func makeNSView(context: Self.Context) -> NSView { return NSVisualEffectView() }
   func updateNSView(_ nsView: NSView, context: Context) { }
 }
 
 @main
-struct VisualEffectApp: App {
+struct NotesApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()
-        .background(VisualEffect().ignoresSafeArea())
+        .background(ClearEffect().ignoresSafeArea())
     }
     .windowStyle(.hiddenTitleBar)
   }
