@@ -10,13 +10,10 @@ import SwiftUI
 struct ContentView: View {
     @State private var text: String = "test"
     var body: some View {
-        VStack {
             TextEditor(text: $text)
                 .background(ClearEffect())
-        }
-        .frame(minWidth: 250, minHeight: 250)
+                .frame(minWidth: 400, minHeight: 400)
     }
 }
 
 // need to add user defaults
-// hide fucking scroll bar
