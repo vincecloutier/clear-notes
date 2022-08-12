@@ -11,7 +11,7 @@ struct ContentView: View {
     @State private var text: String = "test"
     var body: some View {
         VStack {
-            CustomizableTextEditor(text: $text)
+            TextEditor(text: $text)
                 .background(ClearEffect())
         }
         .frame(minWidth: 250, minHeight: 250)

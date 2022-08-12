@@ -12,6 +12,14 @@ struct ClearEffect: NSViewRepresentable {
   func updateNSView(_ nsView: NSView, context: Context) { }
 }
 
+extension NSTextView {
+  open override var frame: CGRect {
+    didSet {
+      backgroundColor = .clear
+    }
+  }
+}
+
 @main
 struct NotesApp: App {
   var body: some Scene {
