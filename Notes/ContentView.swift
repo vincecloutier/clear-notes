@@ -12,9 +12,10 @@ struct ContentView: View {
 
     var body: some View {
         TextEditor(text: $fullText)
+            .frame(minWidth: 250, maxWidth: 500, minHeight: 250, maxHeight: 500)
     }
 }
 
-
+// disallow fullscreen
 // need to add user defaults
 // need to make background transparent
