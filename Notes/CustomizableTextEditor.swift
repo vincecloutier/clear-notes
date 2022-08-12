@@ -15,7 +15,6 @@ struct CustomizableTextEditor: View {
             NSScrollableTextViewRepresentable(text: $text, size: geometry.size)
         }
     }
-    
 }
 
 struct NSScrollableTextViewRepresentable: NSViewRepresentable {
