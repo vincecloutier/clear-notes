@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State private var text: String = "test"
+struct ContentView: View {    
+    @AppStorage("tapCount") private var text = ""
     var body: some View {
             TextEditor(text: $text)
                 .background(ClearEffect())
@@ -16,4 +16,3 @@ struct ContentView: View {
     }
 }
 
-// need to add user defaults
