@@ -7,12 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    @State private var fullText: String = "This is some editable text..."
 
+struct ContentView: View {
+    @State private var text: String = "test"
     var body: some View {
-        TextEditor(text: $fullText)
-            .frame(minWidth: 250, maxWidth: 500, minHeight: 250, maxHeight: 500)
+        VStack {
+            CustomizableTextEditor(text: $text)
+                .background(.)
+        }
+        .frame(width: 400, height: 400)
     }
 }
 
